@@ -1,5 +1,10 @@
 import tkinter as tk
 
+
+from testing_bg import (func_reporte_1, func_reporte_2, func_reporte_3, 
+                        func_reporte_4, func_reporte_5, func_reporte_6)
+
+
 class Aplicacion:
     def __init__(self):
         self.valor=1
@@ -31,21 +36,22 @@ class Aplicacion:
 
 
     def reporte1(self):
-        self.label1.config(text="reporte1")
-
+        func_reporte_1()
+        
     def reporte2(self):
-        self.label1.config(text="reporte2")
+        func_reporte_2()
     
     def reporte3(self):
-        self.label1.config(text="reporte3")
+        func_reporte_3()    
     
     def reporte4(self):
-        self.label1.config(text="reporte4")
-    
+        func_reporte_4()
+
     def reporte5(self):
-        self.label1.config(text="reporte5")
+        func_reporte_5()
 
     def reporte6(self):
-        self.label1.config(text="reporte6")
+        func_reporte_6()
+
 
 aplicacion1=Aplicacion()
